@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="formvalidation.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+
+            <td> User name </td>
+            <td><input type="text" id="TxtUsername" onblur="ClearErrorMail();"></td>
+
+        </tr>
+
+        <tr>
+
+            <td> Mail Adress</td>
+            <td><input type="email" id="TxtMailAdress" onblur="CheckEmail();"><label id="LblValidMail"></label></td>
+
+        </tr>
+        <tr>
+
+            <td> Password </td>
+            <td><input type="password" id="TxtPassword" onblur="ClearErrorMail();"></td>
+
+        </tr>
+
+        <tr>
+
+            <td> Re Password </td>
+            <td><input type="password" id="TxtRePassword" onblur="ClearErrorMail(); CheckPassword();"><label
+                    id="LblValidPassword"></label></td>
+        </tr>
+
+        <tr>
+
+            <td colspan="2"><input type="button" value="Register" onclick="CheckForm();" id="BtnRegister"></td>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>
